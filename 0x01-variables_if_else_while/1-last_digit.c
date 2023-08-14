@@ -2,8 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ *main- mainfunc
+ *Return: 0== success
+ */
 int main(void)
 {
 	int n;
@@ -18,7 +20,7 @@ int main(void)
 	}
 	else if (l == 0)
 	{
-		printf("Last digit of n is %d is %d and is zero\n", n, l);
+		printf("Last digit of %d is %d and is zero\n", n, l);
 	}
 	else
 	{
