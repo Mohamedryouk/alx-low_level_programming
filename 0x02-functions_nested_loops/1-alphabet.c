@@ -1,16 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *main- mainfunc
  *Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	char l;
+	int l;
 
-	for (l = 'a' ; l  < 'z' ; l++)
+	for (l = 'a' ; l <= 'z' ; l++)
 	{
-		putchar(l);
+		_putchar(l);
 	}
-	putchar('\n');
-	return (0);
-}
+	_putchar('\n');
+
+
