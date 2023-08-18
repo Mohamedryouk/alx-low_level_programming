@@ -13,7 +13,6 @@ int _isdigit/*Description*/(int c)
 	{
 		if (c >= 0 && c <= 9)
 		{
-			_putchar(c);
 			return (1);
 		}
 		else
