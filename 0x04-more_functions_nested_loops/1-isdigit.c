@@ -19,7 +19,6 @@ int _isdigit/*Description*/(int c)
 		{
 			return (0);
 		}
-		
 	}
 	return (0);
 }
