@@ -8,9 +8,6 @@
  */
 int mul/*mul*/(int a, int b)
 {
-	int mult;
-	a = 98, b = 1024;
-	mult = a * b;
-	return (0)
+	return (a * b);
 }
 
