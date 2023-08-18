@@ -7,7 +7,9 @@
  */
 int _isdigit/*Description*/(int c)
 {
-	for (int i = 0 ; i <= 9 ; i++)
+	int i;
+
+	for (i = 0 ; i <= 9 ; i++)
 	{
 		if (c >= 0 && c <= 9)
 		{
@@ -20,4 +22,5 @@ int _isdigit/*Description*/(int c)
 		}
 		_putchar('\n');
 	}
+	return (0);
 }
