@@ -3,10 +3,11 @@
 /**
  *main- mainfunc
  *Return: 0
+ *function describe if the param is upper case or not
+ *@c: is a variable that we want to find if its upper case
  */
-int _isupper(int c)
+int _isupper/*uppercase*/(int c)/*c variable*/
 {
-
 	if (c >= 'A' && c <= 'Z')
 	{
 		_putchar(c);
