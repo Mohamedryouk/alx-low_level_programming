@@ -5,6 +5,7 @@
  *@dest: destination
  *@src: source
  *@n: var
+ *Return: pointer to result
  */
 char *_strncat(char *dest, char *src, int n)
 {
