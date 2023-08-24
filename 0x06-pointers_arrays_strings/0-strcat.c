@@ -1,27 +1,21 @@
 #include "main.h"
 /**
- * \*_strcat - concatenate
+ * _strcat - concatenate
  *@dest: var
  *@src: var
+ *@n: var
  *Return: returns char
  */
 char *_strcat(char *dest, char *src)
 {
+	int n;
 	int i = 0;
 	int j = 0;
 
-	while (dest[i++] != '\0')
-	{
-		dest++;
-		i++;
-	}
-	while (src[j] != 0)
-	{
-		*dest = *src;
-		dest++;
-		src++;
+	while (dest[i++])
 		j++;
-	}
-	_putchar('\n');
+	for (i = 0; src[i] && i < n; i++)
+		dest[j] = src[i];
+	return (dest);
 }
 
