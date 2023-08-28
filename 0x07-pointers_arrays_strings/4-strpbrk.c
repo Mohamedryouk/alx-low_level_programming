@@ -1,12 +1,12 @@
 #include "main.h"
 /**
+ *_strpbrk - funct
  *
+ *@s: pointe
  *
+ *@accept:
  *
- *
- *
- *
- *
+ *Return: 0
  */
 char *_strpbrk(char *s, char *accept)
 {
