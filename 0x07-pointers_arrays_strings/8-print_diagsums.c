@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *
- *
- *
- *
+ *print_diagsums - func
+ *@a: var
+ *@size: var
+ *Return: success 0
  */
 void print_diagsums(int *a, int size)
 {
