@@ -21,13 +21,13 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				i++;
 			}
-			else if (accept[j] == '\0')
+			else if (accept[j + 1] == '\0')
 			{
 				return (i);
 			}
 		}
-		*s++;
+		s++;
 	}
-	return (0);
+	return (i);
 }
 
