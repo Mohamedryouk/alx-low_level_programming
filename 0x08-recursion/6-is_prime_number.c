@@ -6,7 +6,7 @@
  *
  *Return: zero
  */
-int is_prime_number(int n)
+int is_prime_number(int n, int i)
 {
 	if (i == 1)
 		return (1);
