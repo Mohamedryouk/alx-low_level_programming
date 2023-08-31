@@ -1,10 +1,10 @@
 #include "main.h"
 /**
+ *_strlen_recursion - func
  *
+ *@s: return pointer to char as an arg
  *
- *
- *
- *
+ *Return: type
  */
 int _strlen_recursion(char *s)
 {
