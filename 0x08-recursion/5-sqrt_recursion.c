@@ -1,16 +1,18 @@
 #include "main.h"
 /**
+ *_sqrt_recursion - function
+ *
+ *@n: number
  *
  *
- *
- *
- *
- *
+ *Return: zero
  *
  */
-int _sqrt_recursion(int n)
+int _sqrt_recursion(int n, int i)
 {
-	if (n < 0)
+	if (i * i > n)
 		return (-1);
-	return (_sqrt_recursion(n, 0));
+	if (i * i == n)
+		return (i);
+	return (_sqrt_recursion(n, i + 1));
 }
