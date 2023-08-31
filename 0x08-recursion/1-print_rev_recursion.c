@@ -2,7 +2,7 @@
 /**
  *_print_rev_recursion - func
  *
- *@S: pointer
+ *@s: pointer
  *
  *Return: void
  *
