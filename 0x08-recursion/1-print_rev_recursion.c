@@ -1,10 +1,10 @@
 #include "main.h"
 /**
+ *_print_rev_recursion - func
  *
+ *@S: pointer
  *
- *
- *
- *
+ *Return: void
  *
  */
 void _print_rev_recursion(char *s)
