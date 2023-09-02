@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - alpha bet function
+ *_isalpha - function
  *main-
  *@c: int
  *Return: 0

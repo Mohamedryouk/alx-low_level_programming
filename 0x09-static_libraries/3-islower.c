@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *_islower- function of lower key alphabet
- *main- main fuction to execute the code
+ *_islower - function
+ *main-
  *@c: int
  *Return: 0
  */
