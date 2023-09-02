@@ -2,7 +2,7 @@
 /**
  *main- func main
  *@argc: int
- *@argv:
+ *@argv: dont use
  *Return: zero
  */
 int main(int argc, char *argv[])
