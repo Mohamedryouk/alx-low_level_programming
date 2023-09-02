@@ -5,8 +5,7 @@
  *
  *@argv: int
  *@argc: argu
- *
- *@Return: 0 success
+ *Return: 0 success
  */
 int main(int argc, char *argv[])
 {
