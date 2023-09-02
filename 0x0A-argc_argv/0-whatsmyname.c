@@ -3,6 +3,7 @@
  *main - func
  *@argc: int
  *@argv: list
+ *Return: return name
  */
 int main(int argc, char *argv[])
 {
