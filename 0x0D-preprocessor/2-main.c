@@ -4,7 +4,7 @@
  *
  *Return: return tyoe int
  */
-int main()
+int main(void)
 {
 	printf("the file name is: %s", __FILE__);
 }
