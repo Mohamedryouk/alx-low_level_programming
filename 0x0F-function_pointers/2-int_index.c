@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 /**
  * int_index- index func
- * @array: the array 
+ * @array: the array
  * @size: the size of array
  * @cmp: the compare func
  * Return: the number index
