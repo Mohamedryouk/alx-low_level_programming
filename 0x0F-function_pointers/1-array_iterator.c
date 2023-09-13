@@ -1,0 +1,15 @@
+#include "function_pointers.h"
+/**
+ *array_iterator- iteration function
+ *@array: func to pointer
+ *@size:size of returned pointer
+ *@action: action after iteration
+ *
+ */
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	int *end = array + size - 1;
+	if (array && size && action)
+		while (array <= *end)
+			action(*array++);
+}
