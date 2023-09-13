@@ -1,4 +1,4 @@
-#include "main.h"
+#include "function_pointers.h"
 /**
  *print_name- function name
  *
@@ -7,5 +7,6 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f() = print_name(name);
+	if (name && f)
+		f(name);;
 }
