@@ -5,7 +5,7 @@
  *
  *@n: list of num arg
  *
- *return: returns sum of all
+ *Return: returns sum of all
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -16,7 +16,6 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 		sum += va_arg(ap, int);
-	va_end(aps)
-;
+	va_end(aps);
 	return (sum);
 }
