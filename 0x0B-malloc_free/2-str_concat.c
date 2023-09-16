@@ -9,7 +9,7 @@ int _strlen(char *s)
 {
 	int size = 0;
 
-	for(; s[size] != '\0'; size++)
+	for (; s[size] != '\0'; size++)
 	;
 	return (size);
 }
@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 		if (i < size1)
 			new_str[i] = s1[i];
 		else
-			new_str[i] = s2[i - size2];
+			new_str[i] = s2[i - size1];
 	}
 	new_str[i] = '\0';
 	return (new_str);
