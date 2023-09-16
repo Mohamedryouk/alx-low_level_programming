@@ -8,17 +8,11 @@
 char *create_array(unsigned int size, char c)
 {
 	char *arr = malloc(size);
-	int i;
 
-	if (arr == NULL)
-	{
-		printf("memory allocation failed\n");
-		return (NULL);
-	}
-
-	for (i = 0; i < size; i++)
-	{
+	if (size == 0 || arr == 0)
+		return (0);
+	while (size--)
 		arr[size] = c;
-	}
+
 	return (arr);
 }
