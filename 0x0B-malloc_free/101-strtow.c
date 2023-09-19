@@ -38,7 +38,7 @@ char **strtow(char *str)
 	matrix = (char **)malloc(c * sizeof(char *));
 	if (matrix == NULL)
 		return (NULL);
-	matrix[c - 1];
+	matrix[c - 1] = NULL;
 	i = 0;
 	while (str[i])
 	{
@@ -53,10 +53,10 @@ char **strtow(char *str)
 			{
 				for (len = 0; len < start; len++)
 					free(matrix[len]);
-				free(matrix[c - 1];
+				free(matrix[c - 1]);
 				free(matrix);
-				return (NULL);
-			}
+				return (NULL)
+			; }
 			for (words = 0; words < j; words++)
 				matrix[start][words] = str[i - words];
 			matrix[start][words] = '\0';
