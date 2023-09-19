@@ -6,19 +6,20 @@
  */
 int count_word(char *s)
 {
-	int flag = 0, a, u = 0;
+	int i, c = 0;
 
-	for (a = 0; s[a] != '\0'; a++)
+	for (i = 0; s[i]; i++)
 	{
 		if (s[a] == ' ')
-			flag = 0;
-		else if (flag == 0)
 		{
-			flag = 1;
-			u++;
+			if (s[i + 1] != ' ' && s[i - 1] != '\0')
+				c++;
 		}
+		else if (i == 0)
+			c++;
 	}
-	return (u);
+	x++;
+	return (x);
 }
 /**
  *strtow- function strtow
