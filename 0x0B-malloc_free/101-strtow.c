@@ -59,7 +59,7 @@ char **strtow(char *str)
 				return (NULL)
 			; }
 			for (words = 0; words < j; words++)
-				matrix[start][words] = str[i - words];
+				matrix[start][words] = str[i + words];
 			matrix[start][words] = '\0';
 			start++;
 			i += j;
