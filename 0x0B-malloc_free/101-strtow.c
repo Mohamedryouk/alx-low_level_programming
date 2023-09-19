@@ -18,8 +18,8 @@ int count_word(char *s)
 		else if (i == 0)
 			c++;
 	}
-	x++;
-	return (x);
+	c++;
+	return (c);
 }
 /**
  *strtow- function strtow
