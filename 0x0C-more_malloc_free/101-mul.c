@@ -7,16 +7,17 @@
 /**
  * is_digit - checks if a string contains a non-digit char
  * @s: string to be evaluated
+ *
  * Return: 0 if a non-digit is found, 1 otherwise
  */
 int is_digit(char *s)
 {
-	for (int i = 0; s[i]; i++)
-	{
-		if (s[i] < '0' || s[i] > '9')
-			return (0);
-	}
-	return (1);
+    for (int i = 0; s[i]; i++)
+    {
+        if (s[i] < '0' || s[i] > '9')
+            return (0);
+    }
+    return (1);
 }
 /**
  * _strlen - returns the length of a string
@@ -26,13 +27,15 @@ int is_digit(char *s)
  */
 int _strlen(char *s)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
-		;
-
+	while (s[i] != '\0')
+	{
+		i++;
+	}
 	return (i);
 }
+
 /**
  * errors - handles errors for main
  */
