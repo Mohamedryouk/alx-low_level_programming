@@ -4,8 +4,6 @@
  *free_list - free list or delete it
  *
  *@head: pointer to thr func
- *
- *Return: returns 0
  */
 void free_list(list_t *head)
 {
