@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "lists.h"
 /**
  *free_list - free list or delete it
@@ -8,7 +9,7 @@
  */
 void free_list(list_t *head)
 {
-	list_t *ptr = head;
+	list_t *ptr;
 
 	while (head)
 	{
