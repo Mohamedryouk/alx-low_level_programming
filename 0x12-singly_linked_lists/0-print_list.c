@@ -15,5 +15,4 @@ size_t print_list(const list_t *h)
 		printf("%d", ptr-> list_t);
 		ptr = ptr->next;
 	}
-	return (list_t);
 }
