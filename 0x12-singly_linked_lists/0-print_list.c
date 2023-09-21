@@ -7,12 +7,20 @@
  */
 size_t print_list(const list_t *h)
 {
-	if (h == NULL)
-		printf("Linked lists is empty");
-	struct node *ptr = NULL;
-	while (ptr != NULL)
+	size_t ptr = 0;
+
+	while (h)
 	{
-		printf("%d", ptr-> list_t);
-		ptr = ptr->next;
+		if (!h->str)
+		{
+			printf("[0] (nil)\n");
+		}
+		else
+		{
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
+		}
+		ptr++;
 	}
+	return (ptr);
 }
