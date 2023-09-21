@@ -1,7 +1,10 @@
+#include <stdio.h>
 #include "lists.h"
 /**
  *print_list- printing data of linked lists
+ *
  *@h:the pointer containig the first node addres
+ *
  *Return: returns the linked lists data
  */
 size_t print_list(const list_t *h)
