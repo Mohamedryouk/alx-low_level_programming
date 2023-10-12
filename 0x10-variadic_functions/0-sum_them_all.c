@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- *sum_them_all- function to return sum of all numbers
+ *sum_them_all- function to return sum of all num
  *
  *@n: list of num arg
  *
