@@ -6,7 +6,7 @@
  *@h:the pointer containig the first node addres
  *
  *Return: returns the linked lists data
- */
+ **/
 size_t print_list(const list_t *h)
 {
 	size_t ptr = 0;
