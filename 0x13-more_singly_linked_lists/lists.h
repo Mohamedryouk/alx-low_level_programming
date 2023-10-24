@@ -11,7 +11,7 @@
  */
 struct list
 {
-	int data;
+	int n;
 	struct list *next;
 };
 typedef struct list listint_t;
