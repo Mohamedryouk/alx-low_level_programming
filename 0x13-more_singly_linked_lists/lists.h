@@ -5,8 +5,8 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * list- struct name
- * @data: struct memeber
+ * struct list- struct name
+ * @n: struct memeber
  * @next: struct pointer
  */
 struct list
@@ -14,6 +14,5 @@ struct list
 	int n;
 	struct list *next;
 };
-typedef struct list listint_t;
 size_t print_listint(const listint_t *h);
 #endif /*lists.h*/
