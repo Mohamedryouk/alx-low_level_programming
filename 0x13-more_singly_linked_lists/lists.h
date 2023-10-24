@@ -4,14 +4,15 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-/*
- * Node- struct name
+/**
+ * list- struct name
  * @data: struct memeber
  * @next: struct pointer
  */
-struct list {
-	int n;
-	struct list* next;
+struct list
+{
+	int data;
+	struct list *next;
 };
 typedef struct list listint_t;
 size_t print_listint(const listint_t *h);
