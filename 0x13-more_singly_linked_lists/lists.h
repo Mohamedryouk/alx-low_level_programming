@@ -14,5 +14,10 @@ struct list
 	int n;
 	struct list *next;
 };
+/**
+ * struct list- struct name
+ * @listint_t: data
+ */
+typedef struct list listint_t;
 size_t print_listint(const listint_t *h);
 #endif /*lists.h*/
