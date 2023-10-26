@@ -8,7 +8,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int add_up = 0;
 
-	if (*b == '\0')
+	if (!b)
 		return (0);
 	while (*b)
 	{
@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			add_up = (add_up << 1);
 		}
-		else
+		else if (*b != '1' || *b != '0')
 		{
 			return (0);
 		}
