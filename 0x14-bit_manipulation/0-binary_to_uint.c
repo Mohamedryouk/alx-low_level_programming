@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_to_unit- converts binary to unsigned integer
+ * binary_to_uint- converts binary to unsigned integer
  * @b: pointer points to a series of chars of 1 and 0
  * Return: returns the converted integer
  */
@@ -10,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (*b == '\0')
 		return (0);
-	while(*b)
+	while (*b)
 	{
 		if (*b == '1')
 		{
