@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * get_endianness- prints the endiann
+ * @void: nothing
  * Return: return the endianness
  */
 int get_endianness(void)
