@@ -2,12 +2,13 @@
 /**
  * print_binary- prints the binary representation of number
  * @n: unsigned int of printed binary
- */ 
+ */
 void print_binary(unsigned long int n)
 {
 	int i;
 	int start = 0;
 	unsigned int bit;
+
 	for (i = 31; i >= 0; i--)
 	{
 		bit = n >> i;
