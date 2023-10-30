@@ -21,10 +21,10 @@ int create_file(const char *filename, char *text_content)
 	/*if the text content is equal to null*/
 	if (!text_content)
 		text_content = "";
-	
+
 	for (write_content = 0; text_content[write_content]; write_content++)
 		;
-	
+
 	/*then we write the content to the file*/
 	read_write = write(fd, text_content, write_content);
 	if (read_write == -1)
