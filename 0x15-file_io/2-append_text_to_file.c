@@ -2,7 +2,7 @@
 /**
  * append_text_to_file- returns them using only append mode
  * @filename: file pointer to the cntent
- * @text_content
+ * @text_content: text to be appended
  * Return: returns 1 if success and -1 if failed
  */
 int append_text_to_file(const char *filename, char *text_content)
