@@ -1,3 +1,5 @@
+int main(int argc, char *argv[]);
+void printElfHeaderInfo(ElfHeader header);
 #include "main.h"
 /**
  * main- main function
@@ -10,36 +12,32 @@ int main(int argc, char *argv[])
 	int fd;
 	ElfHeader header;
 
-	if (argc != 2) {
+	if (argc != 2)
+	{
 		fprintf(stderr, "Usage: %s elf_filename\n", argv[0]);
-		return ERROR_INVALID_ELF;
-	}
-
-	fd = open(argv[1], O_RDONLY);
-	if (fd == -1) {
+		return (ERROR_INVALID_ELF);
+	} fd = open(argv[1], O_RDONLY);
+	if (fd == -1)
+	{
 		perror("Error opening file");
-		return ERROR_INVALID_ELF;
+		return (ERROR_INVALID_ELF);
 	}
-
-	if (read(fd, &header, sizeof(ElfHeader)) != sizeof(ElfHeader)) {
+	if (read(fd, &header, sizeof(ElfHeader)) != sizeof(ElfHeader))
+	{
 		perror("Error reading ELF header");
 		close(fd);
-		return ERROR_INVALID_ELF;
+		return (ERROR_INVALID_ELF);
 	}
-
 	if (header.e_ident[EI_MAG0] != 0x7F || header.e_ident[EI_MAG1] != 'E' ||
-	header.e_ident[EI_MAG2] != 'L' || header.e_ident[EI_MAG3] != 'F') {
-	fprintf(stderr, "Not a valid ELF file\n");
-	close(fd);
-	return ERROR_INVALID_ELF;
-	}
-
-	printf("ELF Header:\n");
+	header.e_ident[EI_MAG2] != 'L' || header.e_ident[EI_MAG3] != 'F')
+	{
+		fprintf(stderr, "Not a valid ELF file\n");
+		close(fd);
+		return (ERROR_INVALID_ELF);
+	} printf("ELF Header:\n");
 	printElfHeaderInfo(header);
-
 	close(fd);
-
-	return 0;
+	return (0);
 }
 /**
  * printElfHeaderInfo- prints header of elf
@@ -50,13 +48,14 @@ void printElfHeaderInfo(ElfHeader header)
 	int i;
 
 	printf("  Magic:   ");
-	for (i = 0; i < 16; i++) {
+	for (i = 0; i < 16; i++)
+	{
 		printf("%02x ", header.e_ident[i]);
 	}
 	printf("\n");
-
 	printf("  Class:                             ");
-	switch (header.e_ident[EI_CLASS]) {
+	switch (header.e_ident[EI_CLASS])
+	{
 	case ELFCLASS32:
 		printf("ELF32\n");
 		break;
@@ -66,9 +65,9 @@ void printElfHeaderInfo(ElfHeader header)
 	default:
 		printf("Unknown\n");
 	}
-
 	printf("  Data:                              ");
-	switch (header.e_ident[EI_DATA]) {
+	switch (header.e_ident[EI_DATA])
+	{
 	case ELFDATA2LSB:
 		printf("2's complement, little-endian\n");
 		break;
@@ -78,11 +77,11 @@ void printElfHeaderInfo(ElfHeader header)
 	default:
 		printf("Unknown\n");
 	}
-
-	printf("  Version:                           %d (current)\n", header.e_ident[EI_VERSION]);
-
+	printf("  Version:                           %d (current)\n", header.e_ident[EI_VERSION])
+		;
 	printf("  OS/ABI:                            ");
-	switch (header.e_ident[EI_OSABI]) {
+	switch (header.e_ident[EI_OSABI])
+	{
 	case 0:
 		printf("UNIX - System V\n");
 		break;
@@ -95,11 +94,11 @@ void printElfHeaderInfo(ElfHeader header)
 	default:
 		printf("Unknown\n");
 	}
-
-	printf("  ABI Version:                       %d\n", header.e_ident[EI_ABIVERSION]);
-
+	printf("  ABI Version:                       %d\n", header.e_ident[EI_ABIVERSION])
+		;
 	printf("  Type:                              ");
-	switch (header.e_type) {
+	switch (header.e_type)
+	{
 	case ET_NONE:
 		printf("NONE (None)\n");
 		break;
@@ -118,6 +117,5 @@ void printElfHeaderInfo(ElfHeader header)
 	default:
 		printf("Unknown\n");
 	}
-
 	printf("  Entry point address:               0x%08x\n", header.e_entry);
 }
