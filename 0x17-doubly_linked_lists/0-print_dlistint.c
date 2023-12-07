@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *print_dlinstint - return list element
+ *print_dlistint - return list element
  *@h: pointer of header
  *Return: returns the elements
  **/
