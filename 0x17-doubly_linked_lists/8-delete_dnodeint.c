@@ -2,7 +2,7 @@
 /**
  *delete_dnodeint_at_index - lists delete
  *@head: head of list
- *@idex: indexs
+ *@index: indexs
  *Return: return lists
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index) {
