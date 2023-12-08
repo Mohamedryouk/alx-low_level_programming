@@ -1,4 +1,10 @@
 #include "lists.h"
+/**
+ *delete_dnodeint_at_index - lists delete
+ *@head:
+ *@idx: indexs
+ *Return: return lists
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index) {
 	unsigned int i;
 	dlistint_t *current = *head;
