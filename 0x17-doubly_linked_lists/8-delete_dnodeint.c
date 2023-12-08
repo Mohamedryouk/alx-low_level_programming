@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
  *delete_dnodeint_at_index - lists delete
- *@head:
- *@idx: indexs
+ *@head: head of list
+ *@idex: indexs
  *Return: return lists
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index) {
