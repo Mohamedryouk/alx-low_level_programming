@@ -5,7 +5,8 @@
  *@b: second
  *Return: return
  */
-int add(int a, int b) {
+int add(int a, int b)
+{
     return a + b;
 }
 /**
@@ -14,7 +15,8 @@ int add(int a, int b) {
  *@b: second
  *Return: return
  */
-int sub(int a, int b) {
+int sub(int a, int b)
+{
     return a - b;
 }
 /**
@@ -23,7 +25,8 @@ int sub(int a, int b) {
  *@b: second
  *Return: return
  */
-int mul(int a, int b) {
+int mul(int a, int b)
+{
     return a * b;
 }
 /**
@@ -32,7 +35,8 @@ int mul(int a, int b) {
  *@b: second
  *Return: return
  */
-int div(int a, int b) {
+int div(int a, int b)
+{
     if (b == 0) {
         fprintf(stderr, "Error: Division by zero\n");
         return 0;
@@ -45,7 +49,8 @@ int div(int a, int b) {
  *@b: second
  *Return: return
  */
-int mod(int a, int b) {
+int mod(int a, int b)
+{
     if (b == 0) {
         fprintf(stderr, "Error: Modulus by zero\n");
         return 0;
