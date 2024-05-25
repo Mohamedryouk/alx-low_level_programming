@@ -6,6 +6,7 @@
   * @left: left pointer side
   * @right:  right pointer side
   * @value: The value to search for.
+  * Return: return value
   */
 int _binary_search(int *array, size_t left, size_t right, int value)
 {
@@ -38,7 +39,7 @@ int _binary_search(int *array, size_t left, size_t right, int value)
   * @array: array of values
   * @size: size of the array
   * @value: The value to search for.
-  * Returb: return value
+  * Return: return value
   */
 int exponential_search(int *array, size_t size, int value)
 {
