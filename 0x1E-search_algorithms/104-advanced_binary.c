@@ -25,8 +25,8 @@ void print_subarray(int *array, size_t x, size_t y)
 /**
  * advanced_binary_recursive - recursive binary search in advnace manner.
  * @array: array to be searched recursevely
- * @left: left portion of the array after spliting it
- * @right: right portion of the array after analyzing the left portion.
+ * @low: left portion of the array after spliting it
+ * @high: right portion of the array after analyzing the left portion.
  * @value: value to be searched and printed
  * Return: return value after searching.
 */
