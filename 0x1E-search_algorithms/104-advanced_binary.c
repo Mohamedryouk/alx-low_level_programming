@@ -30,33 +30,24 @@ void print_subarray(int *array, size_t x, size_t y)
  * @value: value to be searched and printed
  * Return: return value after searching.
 */
-int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
+int advanced_binary_recursive(int *array, int low, int high, int value)
 {
-	size_t mid;
+	int mid;
 
-	if (left > right)
+	if (low > high)
 	{
 		return (-1);
 	}
-	print_subarray(array, left, right);
+	print_subarray(array, low, high);
 
-	mid = left + (right - left) / 2;
-	if (array[mid] == value)
+	mid = low + (high - low) / 2;
+	if (value == array[mid] && (mid == low || array[mid - 1] != value))
 	{
-		if (mid == left || array[mid - 1] != value)
-		{
-			return (mid);
-		}
-		return (advanced_binary_recursive(array, left, mid, value));
+		return (mid);
 	}
-	else if (array[mid] < value)
-	{
-		return (advanced_binary_recursive(array, mid + 1, right, value));
-	}
-	else
-	{
-		return (advanced_binary_recursive(array, left, mid - 1, value));
-	}
+	else if (value <= array[mid])
+		return (advanced_binary_recursive(array, low, mid, value));
+	return (advanced_binary_recursive(array, mid + 1, high, value));
 }
 /**
  * advanced_binary - advanced binary search algorithm
